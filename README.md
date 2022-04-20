@@ -1,4 +1,8 @@
-# Complain_system
+<<<<<<< HEAD
+# Complain_design
+=======
+# Complain-design
+>>>>>>> 837c7b084251e0d1ae68b0cf9bad5cb14b247e55
 report card management system
 
 Collaboration rules
