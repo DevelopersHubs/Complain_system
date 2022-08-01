@@ -4,7 +4,7 @@ body{
 }
 
 .content{
-    background-color: blue;
+    background: rgb(7, 7, 119);
     display: flex;
     width: auto;
     justify-content: space-between;
@@ -33,40 +33,54 @@ body{
 .col1 ul li a{
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 110%;
 
+}
+.col1 ul li a::after{
+    background-color: green;
+    height: 2px;
+    width: 0%;
+    position:absolute;
+    content: '';
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+
+}
+.col1 ul li a:hover::after{
+    width: 100%;
 }
 
 .information{
-    width: 80;
+    width: 80%;
     margin: auto;
     padding-top: 20px;
     display: flex;
     text-align: justify;
     justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 100px;
+    padding-left: 21%;
+    padding-right: 5%;
 }
 .row{
     text-align: center;
     padding-top: 100px;
 }
 .row1{
-    width: 30%;
-    height: 70vh;
+    width: 40%;
+    height: auto;
     box-shadow: 0 4px 5px rgba(0,0,0,0.3);
     text-align: center;
     padding-right: 2%;
     background: white;
     margin: 2% auto 0;
     padding: 2px;
-    margin-right: 90px;
+    margin-right: 20%;
     border-radius: 12px;
 }
 .info{
     padding-top: 10px;
     color: white;
-    background: blue;
+    background: rgb(7, 7, 119);
     border-top-left-radius: 10px;
     border-top-right-radius:10px ;
 }
@@ -78,7 +92,105 @@ font-size: large;
 .myInfo{
     background-color: rgb(204, 197, 197);
     border-radius: 6px;
-    padding: 5px;
-    margin-right: 88px;
+    padding: 15px;
+    margin-right: 4%;
+    border: none;
+    margin-bottom: 20px;
+    width: 73%;
+
     
+}
+.myInfo1{
+    background-color: rgb(212, 211, 211);
+    border-radius: 6px;
+    padding: 15px;
+    margin-right: 3%;
+    border: none;
+    margin-bottom: 18px;
+    width: 73%;
+}
+#pass{
+    margin-right: 48%;
+    text-decoration: none;
+    color: rgb(129, 126, 126);
+
+}
+#pass:hover{
+    color:rgb(7, 7, 119)
+}
+.btn{
+    background-color: rgb(7, 7, 119);
+    color: white;
+    width: 54%;
+    padding: 3%;
+    border: none;
+    border-radius: 6px;
+    margin-left: 20%;   
+    font-family: sans-serif;
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.btn:hover{
+    background: green;
+    transition: 1s;
+}
+#acc-link{
+    text-decoration: none;
+    margin-left: 30%;
+    color: rgb(65, 33, 248);
+}
+#acc-link:hover{
+    color: green;
+
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width: 900px){
+   
+    .col1 ul li a:hover{
+        color: green;
+    }
+    .col1 ul li a::after{
+        background:rgb(7, 7, 119) ;
+        height: 2px;
+        width: 100%;
+        position:absolute;
+        transition: none;
+        overflow: hidden;
+    
+    }
+    
+    
+    .col1 ul li{
+        display: block;
+        text-align: right;
+
+    }
+    nav{
+        position: absolute;
+        background: rgb(204, 197, 197);
+        height: 34vh;
+        width: 60%;
+        top: 0;
+        right:-150px;
+        text-align:left;
+        z-index: 2;
+
+    }
+    nav .fa{
+        display:block;
+        color: rgb(199, 2, 2);
+        margin:13px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+    nav ul{
+        margin-right: 54%;
+        padding:30px;
+    }
 }
