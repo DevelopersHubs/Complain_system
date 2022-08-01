@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    background-color: blue;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.col{
+    margin-left:70px;
+    display: inline-block;
+    color: white;
+}
+.col img{
+    padding-bottom: -70px;
+}
+.col1{
+    flex: 1;
+    text-align: right;
+    margin-right: 50px;
+}
+.col1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.col1 ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+.information{
+    width: 80;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 100px;
+}
+.row{
+    text-align: center;
+    padding-top: 100px;
+}
+.row1{
+    width: 30%;
+    height: 70vh;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    padding-right: 2%;
+    background: white;
+    margin: 2% auto 0;
+    padding: 2px;
+    margin-right: 90px;
+    border-radius: 12px;
+}
+.info{
+    padding-top: 10px;
+    color: white;
+    background: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+}
+.row1 p{
+font-family: sans-serif;
+font-size: large;
+}
+
+.myInfo{
+    background-color: rgb(204, 197, 197);
+    border-radius: 6px;
+    padding: 5px;
+    margin-right: 88px;
+    
+}
